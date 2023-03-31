@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    color: rgb(238, 240, 240);
+    background-color: black;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(2.png);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 5%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.logo{
+    width: 200px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: rgb(242, 248, 248);
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+    font-weight: bold;
+
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 4px;
+    background: aqua;
+    position: absolute;
+    left: 0;
+    transition: 0.5s;
+    bottom: -6px;
+}
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+
+.header-text p{
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: cursive;
+    color: aqua;
+}
+
+.header-text h1{
+    font-size: 50px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color: aqua;
+}
+
+
+/* abou */
+#about{
+    padding-top: 20px;
+ 
+    color: aliceblue;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1 img{
+    width: 120%;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-2{
+    flex-basis: 60%;
+    text-align: justify;
+}
+
+.about-col-2 h1{
+    font-size: 50px;
+    font-weight: 500px;
+    text-align: justify;
+    
+}
+.titles{
+    display: flex;
+    margin: 20px 0 30px;
+}
+
+.tablinks{
+    margin-right: 40px ;
+    font-size: 20px;
+    font-weight: 10;
+    position: relative;
+    cursor: help;
+    color: aqua;
+}
+
+.tab_cn ul li{
+    list-style: none;
+    margin: 10px 0;
+    font-weight: 700;
+
+
+}
+.education ul{
+    padding-left: 30px;
+}
+.education h2{
+    color: aqua;
+    font-weight: 800;
+}
+
+.education{
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 40px;
+}
+.education ul li{
+    font-size: large;
+    font-weight: 400;
+}
+
+/* services */
+
+#services{
+    padding: 30px 0;
+    
+}
+.container h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+.slist{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap: 40PX;
+    margin-top: 40px;
+}
+.slist div{
+   
+    font-size: 18px;
+    font-weight: 300;
+    text-align: justify;
+    padding: 30px;
+    background-color: rgb(39, 38, 38);
+    border-radius: 30px;
+}
+.slist div h2{
+    color: aqua;
+    padding-bottom: 10px;
+}
+.slist div p{
+    font-size: large;
+    padding-bottom: 7px;
+}
+.slist div a{
+    color: aqua;
+    text-decoration: none;
+}
+.slist div:hover{
+   
+    font-size: 18px;
+    font-weight: 300;
+    text-align: justify;
+    padding: 30px;
+    background-color: rgb(5, 7, 6);
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+.contact{
+    padding: 50px 85px;
+    
+}
+.contact h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+.contact div{
+    margin-top: 30px;
+    margin-right: 80px;
+    padding-left: 20px;
+    display: inline-block;
+    border-radius: 50px;
+    max-width: 600px;
+    background-color: rgb(0, 0, 0);
+    width: 1500px;
+    padding: 50px;
+
+    border-radius: 50px;
+
+}
+.contact ol li{
+    list-style: none;
+    font-size: large;
+    padding: 30px 30px 30px ;
+    font-size: x-large;
+    font-weight: 600;
+
+   
+}
+.contact div button{
+    background-color: rgb(253, 245, 245);
+    width: 150px;
+    height: 50px;
+    border-style: none;
+    border-radius: 50px;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    margin-right: 30px;
+    font-weight: 300;
+    margin-left: 60px;
+
+}
+.contact div button a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 500;
+}
+.contact div form button{
+
+    background-color: rgb(255, 255, 255);
+    width: 150px;
+    height: 50px;
+    border-style: none;
+    border-radius: 50px;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+    margin-right: 20px;
+    font-weight: 300;
+    margin-left: 20px;
+    display: inline-block;
+}
+.contact div form{
+    background-color: rgb(0, 0, 0);
+    width: 500px;
+    padding: 50px;
+    color: black;
+    border-radius: 50px;
+    border: 2px solid aqua;
+}
+.contact div form label{
+    
+    font-size: x-large;
+    color: aliceblue;
+    font-weight: 900;
+    padding: 10px;
+
+}
+.contact div form input{
+    
+    width: 400px;
+    height: 80px;
+    border-radius: 10px;
+    border-color: aqua;
+    margin-top: 10px;
+    padding: 30px;
+
+}
+.contact div form textarea{
+    width: 400px;
+    height: 150px;
+    border-radius: 10px;
+    border-color: aqua;
+  margin-top: 10px;
+  padding: 30px;
+
+}
+
+footer{
+    border: 2px solid aqua;
+    padding: 10px 50px 10px 50px;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
